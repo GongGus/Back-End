@@ -1,28 +1,11 @@
-#spring:
-#  datasource:
-#    url: jdbc:mysql://localhost:3306/gonggusdb?serverTimezone=Asia/Seoul
-#    username: root
-#    password: root
-#    driver-class-name: com.mysql.cj.jdbc.Driver
-
 spring:
-  datasource:
-    driver-class-name: org.h2.Driver
-    url: jdbc:h2:~/gonggus;AUTO_SERVER=TRUE
-    username: sa
-    password:
-    platform: h2
-  h2:
-    console:
-      enabled: true
-      path: /console
-
+  profiles:
+    include: real-db
 
   jpa:
-    hibernate:
-      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
 
-  data:
-    rest:
-      base-path: /api
-
+  session:
+    store-type: jdbc
