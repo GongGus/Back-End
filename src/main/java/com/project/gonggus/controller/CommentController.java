@@ -15,7 +15,7 @@ import java.util.Map;
 
 @RestController
 @RequiredArgsConstructor
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "https://gonggus.cf", allowCredentials = "true")
 public class CommentController {
 
     @Autowired

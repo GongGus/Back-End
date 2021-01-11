@@ -16,7 +16,7 @@ import java.util.*;
 
 @RestController
 @RequiredArgsConstructor
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "https://gonggus.cf", allowCredentials = "true")
 public class UserContoller {
 
     @Autowired
