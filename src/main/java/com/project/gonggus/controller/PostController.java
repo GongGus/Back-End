@@ -16,7 +16,7 @@ import java.util.Map;
 
 @RestController
 @RequiredArgsConstructor
-@CrossOrigin(origins = "https://api.gonggus.cf", allowCredentials = "true")
+@CrossOrigin(origins = "https://www.gonggus.cf", allowCredentials = "true")
 public class PostController {
 
     @Autowired

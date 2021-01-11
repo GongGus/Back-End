@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@CrossOrigin(origins = "https://api.gonggus.cf", allowCredentials = "true")
+@CrossOrigin(origins = "https://www.gonggus.cf", allowCredentials = "true")
 public class HomeController {
 
     @RequestMapping("/")
