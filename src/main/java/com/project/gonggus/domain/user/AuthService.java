@@ -66,6 +66,9 @@ public class AuthService {
         Cookie cookie = new Cookie("access_token", token);
         cookie.setMaxAge((int)(EXPIRE_DAY * ONE_DAY));
         cookie.setHttpOnly(true);
+        cookie.setSecure(false);
+        cookie.setPath("/");
+        cookie.setDomain(".gonggus.cf");
         return cookie;
     }
 
